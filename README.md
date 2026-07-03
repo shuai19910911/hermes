@@ -5,7 +5,7 @@
 ## 设备文档
 
 - [实验室服务器 Hermes 常用命令](devices/lab-server-hermes.md)
-- [实验室服务器 Ubuntu 22.04](devices/lab-server-ubuntu.md)
+- [实验室台式linux](devices/lab-server-linux.md)
 
 ## 安全约定
 
