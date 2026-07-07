@@ -1,0 +1,31 @@
+# 不提交 Hermes/VPN 敏感文件
+.env
+*.env
+auth.json
+*.key
+*.pem
+*token*
+*secret*
+
+# VPN/Mihomo 原始配置和运行文件
+**/subscription.url
+**/subscription.raw
+**/config.yaml
+**/mihomo.log
+**/mihomo.pid
+**/cache.db
+**/geoip.metadb
+**/mihomo.gz
+**/bin/
+
+# VPS SSH 代理相关敏感/运行文件
+**/.vps-proxy/
+**/tunnel.log
+**/known_hosts
+**/id_rsa*
+**/id_ed25519*
+
+# 常见临时文件
+.DS_Store
+*.tmp
+*.bak
