@@ -1,25 +1,15 @@
 # 实验室台式linux
 
-IP: 192.168.110.161 | 用户: shuai
+IP: 192.168.110.161 | 用户: shuai | 公网: 210.79.151.26
 
-## VPN / 代理
+## VPS 代理
 
-启动代理（Clash Meta，端口 7890）：
+VPS: root@95.169.2.30 (SSH免密)
 
-```
-verge-mihomo -f /tmp/vpn_clash.yaml -d /tmp &
-```
-
-更新订阅（连不上时执行）：
-
-```
-curl -sL -A "clash-verge/2.5.1" "订阅链接" -o /tmp/vpn_clash.yaml
-```
-
-停止代理：
-
-```
-pkill -f verge-mihomo
+```bash
+vps-on      # 启动隧道+开启代理
+vps-off     # 关闭隧道+关闭代理
+vps-status  # 查看状态
 ```
 
 ## SSH
@@ -30,13 +20,11 @@ ssh shuai@192.168.110.161
 
 ## 远程桌面
 
-xrdp 端口 3389，RayLink 桌面应用。
+xrdp 端口 3389，域名 shuaibaba.store
 
-## 安装的代理工具
+## 相关服务
 
-| 工具 | 路径 |
+| 服务 | 说明 |
 |------|------|
-| sing-box | ~/.local/bin/sing-box |
-| xray | ~/.local/bin/xray |
-| trojan-go | ~/.local/bin/trojan-go |
-| verge-mihomo | /usr/bin/verge-mihomo |
+| Clash Verge | GUI代理管理(托盘) |
+| cloudflared | ~/.local/bin/ 隧道 |
